@@ -10,4 +10,6 @@ html,body{
   margin: 0;
   padding: 0;
 }
-
+.ck.ck-powered-by a {
+  display: none;
+}

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+
 // Custom Components
 import InputText from '../components/InputText';
 import InputEmail from '../components/InputEmail';
@@ -11,6 +12,7 @@ import InputPassword from '../components/InputPassword';
 import InputSelect from '../components/InputSelect';
 import InputCheckbox from '../components/InputCheckbox';
 import InputButton from '../components/InputButton';
+import { toast } from 'react-toastify';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
@@ -43,16 +45,21 @@ const Registrationpage = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (values) => {
-    try{
-      const response = await axios.post(apiUrl,values);
-      console.log('Data saved successfully',values);
+    try {
+      const response = await axios.post(apiUrl, values);
+      console.log('Data saved successfully', response.data);
+  
+     
+      toast.success('Registration successful! Please login.');
+  
       navigate('/login');
-    }
-    catch(error){
-      console.log('Error saving data',error);
+    } catch (error) {
+      console.error('Error saving data', error);
+  
+
+      toast.error('Failed to register. Please try again.');
     }
   };
-
   const options = [
     { label: 'Male', value: 'male' },
     { label: 'Female', value: 'female' },
@@ -79,6 +86,7 @@ const Registrationpage = () => {
           padding: 0,
         }}
       >
+                
         <Box
           sx={{
             width: 500,

@@ -1,27 +1,9 @@
 {
   "users": [
     {
-      "id": "858a",
-      "name": "sagar",
-      "email": "sagr@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "gender": "male",
-      "agreeTerms": true
-    },
-    {
-      "id": "a5b6",
-      "name": "sagar",
-      "email": "sagar@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "gender": "male",
-      "agreeTerms": true
-    },
-    {
-      "id": "7388",
-      "name": "hhehe",
-      "email": "hehe@gmal.com",
+      "id": "f5d8",
+      "name": "hehe",
+      "email": "hehe@gmail.com",
       "password": "123456",
       "confirmPassword": "123456",
       "gender": "male",

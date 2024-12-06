@@ -35,7 +35,7 @@ const Loginpage = () => {
 
       const user = users.find(
         (u) =>
-          u.email.toLowerCase() === values.email.toLowerCase() &&
+          u.email === values.email &&
           u.password === values.password
       );
 
