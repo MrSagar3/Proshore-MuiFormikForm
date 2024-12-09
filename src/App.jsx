@@ -6,11 +6,13 @@ import Dashboard from './pages/Dashboard';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProtectedRoute from './components/ProtectedRoute'; 
+import DBreadcrumbs from './components/DBreadcrumbs';
 
 function App() {
   return (
     <>
       <Router>
+        <DBreadcrumbs/>
         <Routes>
           <Route path="/" element={<Registrationpage />} />
           <Route path="/login" element={<Loginpage />} />

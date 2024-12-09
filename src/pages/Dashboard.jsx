@@ -37,21 +37,7 @@ const Dashboard = () => {
           padding: 0,
         }}
       >
-        {/* Breadcrumbs Section */}
-        <Box
-  sx={{
-    width: '100%',
-    padding: '16px',
-    background: 'rgba(255, 255, 255, 0.2)',
-    backdropFilter: 'blur(10px)',
-    border: '1px solid rgba(255, 255, 255, 0.3)',
-    borderRadius: '8px',
-    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  }}
->
-  <DBreadcrumbs/>
-</Box>
-
+       
 
 
         {/* Dashboard Section */}
